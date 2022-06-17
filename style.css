@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+:root{
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Space Mono', monospace;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+}
+.input{
+    position: relative;
+}
+.input img{
+    position: absolute;
+    left: 3%;
+    bottom: 25%;
+}
+.bg-cyan{
+    background-color: var(--light-grayish-cyan);
+}
+.bg-dark-cyan{
+    background-color: var(--very-dark-cyan);
+    transition: all 0.4s;
+}
+.btn.bg-dark-cyan:hover{
+    background-color: var(--strong-cyan);
+}
+.btn-tip.active{
+    background-color: var(--strong-cyan);
+}
+.number{
+    font-weight: 700;
+    /* font-size: 1.1rem; */
+    padding: 0.5rem;
+}
+.text-light-cyan{
+    color: var(--dark-grayish-cyan);
+}
+.text-light-error{
+    font-family: 'Space Mono', monospace;
+    color: rgb(231, 98, 98);
+}
+
+.form-control{
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.form-control:hover{
+    border: 2px solid var(--strong-cyan);
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border: 2px solid var(--strong-cyan);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.detail-tip{
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.detail-tip span{
+    color: var(--grayish-cyan);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.amount{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--strong-cyan);
+}
+.btn.btn-cyan{
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+}
